@@ -79,17 +79,33 @@ console.log(`Seconds elapsed since January 1, 1970: ${secondsSince1970} seconds`
 
 // Exercises: Level 2
 
-const base = prompt("Enter Base: ")
-const height = prompt("Enter height: ")
-const area = alert(`The area of the triangle is ${0.5 * base * height}`)
+// const base = prompt("Enter Base: ")
+// const height = prompt("Enter height: ")
+// const area = alert(`The area of the triangle is ${0.5 * base * height}`)
 
 
-const a = parseInt(prompt('Enter side a: '))
-const b = parseInt(prompt('Enter side b: '))
-const c = parseInt(prompt('Enter side c: '))
-const triangle = alert(`The perimeter of the triangle is ${a + b + c}`)
+// const a = parseInt(prompt('Enter side a: '))
+// const b = parseInt(prompt('Enter side b: '))
+// const c = parseInt(prompt('Enter side c: '))
+// const triangle = alert(`The perimeter of the triangle is ${a + b + c}`)
 
 
-const length = parseFloat(prompt('Enter length: '))
-const width = parseFloat(prompt('Enter width: '))
-const rectangle = alert(`perimeter of rectangle ${2 * (length + width)}`)
+// const length = parseFloat(prompt('Enter length: '))
+// const width = parseFloat(prompt('Enter width: '))
+// const rectangle = alert(`perimeter of rectangle ${2 * (length + width)}`)
+
+
+// area = pi * r * r
+// circle = 2 * pi * r
+// pi = 3.14
+
+// const circle = parseInt(prompt('Enter radius: '))
+// const circleArea = alert(`${3.14 * circle * circle}`)
+// const circleCircum = alert(`${ 2 * 3.14 * circle }`)
+
+
+// const xint = parseInt(prompt('x-intercept: '))
+// const yint = parseInt(prompt('y-intercept: '))
+
+// const slope = alert(`x-intercept ${yint = 2*xint - 2}`)
+

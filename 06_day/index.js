@@ -188,14 +188,14 @@ const oddSum = odd.reduce((acc, curval)=>acc+curval,0)
 
 console.log(`The sum of all evens from 0 to 100 is : ${evenSum}. And the sum of all odds from 0 to 100 is : ${oddSum}`);
 
-const arrayRandomNumber = []
+const arrayRandomNumber = new Set()
 
 for(let i = 0; i < 5; i++){
   const random = parseInt(Math.random() * i) + 1
-  arrayRandomNumber.push(random)
+  // Array.from(arrayRandomNumber.push(random))
 }
 
-console.log(arrayRandomNumber);
+// console.log(arrayRandomNumber);
 
 
 function generateUniqueRandomNumbers(count, maxRange) {
@@ -217,5 +217,46 @@ function generateUniqueRandomNumbers(count, maxRange) {
   return uniqueNumbers;
 }
 
-const uniqueRandomNumbers = generateUniqueRandomNumbers(5, 100); // Generate 5 unique random numbers between 0 and 99.
+const uniqueRandomNumbers = generateUniqueRandomNumbers(5, 100);
 console.log(uniqueRandomNumbers);
+
+
+
+
+function generateArrayRandomNumber(count, maxRange){
+  if(count > maxRange){
+    console.log('Give a count under in Max Range in Hundered');
+    return []
+  }
+
+  const uniqueRandomNum = []
+  while(uniqueRandomNum.length < count){
+    const random = parseInt(Math.random()*100)
+    if(!uniqueRandomNum.includes(random)){
+      uniqueRandomNum.push(random)
+    }
+  }
+  return uniqueRandomNum
+}
+
+console.log('unique: ',generateArrayRandomNumber(5,100));
+
+
+
+
+function generateRandomId(count,maxrange){
+  if(count > maxrange){
+    console.log('Give a count under in Max Range in Hundered');
+    return []
+  }
+
+  const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  let randomId = ''
+  for(let i = 0; i < count; i++){
+    const randomIndex = Math.floor(Math.random()*characters.length)
+    randomId += characters[randomIndex]
+  }
+  return randomId
+}
+
+console.log(generateRandomId(10,100));
